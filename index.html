@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>P N L</title>
+        <style>
+            body {
+                background-color: #f5f5f5;
+                color: #333;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        
+            h1 {
+                text-align: left;
+                font-size: 36px;
+                margin-bottom: 30px;
+                color: #000000;
+            }
+            
+            .produto {
+                width: calc(25%);
+                margin-bottom: 40px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                text-align: left;
+                transition: transform 0.3s ease;
+            }
+            
+            @media (max-width: 600px) {
+                .produto {
+                    width: calc(100%); /* Alterado para 50% */
+                }
+            }
+            
+            @media (min-width: 601px) and (max-width: 1060px) {
+                .produto {
+                    width: calc(40%); /* Adicionado para 33.33% */
+                }
+            }
+            
+            @media (min-width: 1061px) {
+                .produto {
+                    width: calc(25%); /* Adicionado para 25% */
+                }
+            }
+            
+            .produtos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .produto:hover {
+                box-shadow: 0 0 20px;
+                transform: translateY(-5px);
+            }
+        
+            .produto img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+        
+            .produto h2 {
+                font-size: 24px;
+                color: #333;
+            }
+        
+            .produto .preco {
+                font-size: 24px;
+                margin-bottom: 20px;
+                margin-top: 5px;
+                color: #0052cc;
+            }
+        
+            .produto .preco0 {
+                font-size: 14px;
+                margin-bottom: 5px;
+                margin-top: 20px;
+                color: #ff0000;
+            }
+
+            .botao-comprar {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 20px;
+                font-size: 16px;
+                background-color: #0052cc;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+        
+            .botao-comprar:hover {
+                background-color: #003d99;
+            }
+        
+            .footer {
+                margin-top: 40px;
+                text-align: center;
+                background-color: #222;
+                padding: 20px;
+                color: #fff;
+            }
+        
+            .footer p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        
+            header {
+                background-color: #222;
+                padding: 20px;
+                text-align: center;
+                color: #fff;
+                max-height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            header h1 {
+                margin: 0;
+                margin-left: 50px;
+                color: white;
+                font-size: 24px;
+                border-radius: 100px;
+                border: 4px solid white;
+                padding: 10px;
+                width: 100px;
+                text-align: center;
+            }
+            header nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            header nav ul li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+
+            header nav ul li a:hover {
+                color: #ccc;
+            }
+        </style>    
+</head>
+    <body>
+        <header>
+            <h1>P N L</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Contato</a></li>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Fones de Ouvido</h1>
+            <div class="produtos">
+                <div class="produto"> <a href="/pages/page-01.html"><img src="imgs/imgs-01/img1.jpg" alt="Produto 1"></a>
+                    <h2>Fone de Ouvido com Microfone, Headphones, Headset Gaming, Intra-auricular, Cancelamento de Ruído com Fio para Jogo
+                    Plug-in, Celular, Computador, PUBG</h2>
+                    <div class="preco0"><s>R$ 112,92</s><br></div>
+                    <div class="preco"><b>R$ 94,10</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-02.html"><img src="imgs/imgs-02/img2.jpg" alt="Produto 2"></a>
+                    <h2>X15 TWS Fones De Ouvido Sem Fio Bluetooth Gamer Auscultadores 65ms Baixa Latência Earbuds Fone Gamer Headset Gamer Com
+                    Mic Handfree</h2>
+                    <div class="preco0"><s>R$ 133,44</s><br></div>
+                    <div class="preco"><b>R$ 100,08</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div> <!-- Adicione mais produtos aqui -->
+                <div class="produto"> <a href="/pages/page-03.html"><img src="imgs/imgs-03/img3.jpg" alt="Produto 3"></a>   
+                    <h2>G11 bluetooth fones de ouvido jogos sem fio bluetooth fone de ouvido bluetooth fones de alta fidelidade com microfone
+                    caixa carregamento</h2>
+                    <div class="preco0"><s>R$ 110,10</s><br></div>
+                    <div class="preco"><b>R$ 91,75</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-04.html"><img src="imgs/imgs-04/img4.jpg" alt="Produto 4"></a>
+                    <h2>2023 novo bluetooth 5.3 tws fone de ouvido sem fio à prova dwaterproof água cancelamento ruído jogo fones com tela led alta fidelidade música esportes fone ouvido</h2>
+                    <div class="preco0"><s>R$ 162,10</s><br></div>
+                    <div class="preco"><b>R$ 129,68</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-05.html"><img src="imgs/imgs-05/img5.jpg" alt="Produto 5"></a>
+                    <h2>Tws sem fio fones de ouvido jogos bluetooth 5.2 baixa latência fone alta fidelidade estéreo controle toque cancelamento
+                    ruído fone de ouvido bluetooth</h2>
+                    <div class="preco0"><s>R$ 112,68</s><br></div>
+                    <div class="preco"><b>R$ 93,90</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-06.html"><img src="imgs/imgs-06/img6.jpg" alt="Produto 6"></a>
+                    <h2>C1-1 bluetooth fone de ouvido esportes ao ar livre fone sem fio 5.2 com carregamento bin exibição energia controle toque
+                    fones de ouvido</h2>
+                    <div class="preco0"><s>R$ 132,00</s><br></div>
+                    <div class="preco"><b>R$ 99,00</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-07.html"><img src="imgs/imgs-07/img7.jpg" alt="Produto 7"></a>
+                    <h2>A22 bluetooth fone de ouvido esportes ao ar livre sem fio fone 5.2 com carregamento bin exibição energia controle toque
+                    fones</h2>
+                    <div class="preco0"><s>R$ 118,60</s><br></div>
+                    <div class="preco"><b>R$ 94,88</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-08.html"><img src="imgs/imgs-08/img8.jpg" alt="Produto 8"></a>
+                    <h2>Tg09 sem fio bluetooth fone de ouvido baixo atraso tws earplugues e-esportes jogo impermeável suor-prova de ruído do
+                    telefone móvel universal</h2>
+                    <div class="preco0"><s>R$ 131,96</s><br></div>
+                    <div class="preco"><b>R$ 93, 97</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+                <div class="produto"> <a href="/pages/page-09.html"><img src="imgs/imgs-09/img9.jpg" alt="Produto 9"></a>
+                    <h2>Original lenovo lp80 pro rgb tws bluetooth 5.3 fone de ouvido esportes alta fidelidade dupla redução ruído sem fio baixa
+                    latência gaming fone ouvido</h2>
+                    <div class="preco0"><s>R$ 165,30</s><br></div>
+                    <div class="preco"><b>R$ 110,20</b></div>
+                    <a class="botao-comprar"
+                        href="https://api.whatsapp.com/send?phone=5541997738510&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20quais%20produtos%20da%20loja%20ainda%20est%C3%A3o%20dispon%C3%ADveis%2C%20por%20gentileza">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Loja de Fones de Ouvido &copy; 2023. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+
+    </html>
